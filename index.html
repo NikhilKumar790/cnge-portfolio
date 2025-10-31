@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="profile">
+                <h1>Energy Portfolio</h1>
+                <p>Renewable Energy Systems Design</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" onclick="showSection('home')">Home</a></li>
+                <li><a href="#activity1" class="nav-link" onclick="showSection('activity1')">Activity 1</a></li>
+                <li><a href="#activity2" class="nav-link" onclick="showSection('activity2')">Activity 2</a></li>
+                <li><a href="#activity3" class="nav-link" onclick="showSection('activity3')">Activity 3</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content">
+            <!-- Home Section -->
+            <section id="home" class="activity-section active home-section">
+                <h2>Welcome to My Renewable Energy Portfolio</h2>
+                <p>This portfolio showcases three comprehensive renewable energy system designs, demonstrating practical applications of sustainable energy solutions for real-world scenarios.</p>
+                <div class="welcome-card">
+                    <h3 style="margin-bottom: 20px; font-size: 28px;">Featured Projects</h3>
+                    <p style="margin-bottom: 15px;">✦ Rooftop Solar PV System with Storage</p>
+                    <p style="margin-bottom: 15px;">✦ Solar Water Heating System for Hostels</p>
+                    <p>✦ Hybrid Solar-Wind Energy System</p>
+                </div>
+            </section>
+            
+            <!-- Activity 1: Rooftop Solar PV System -->
+            <section id="activity1" class="activity-section">
+                <h2>Activity 1: Rooftop Solar PV System (5 kW)</h2>
+                
+                <div class="diagram-container">
+                    <h3>System Architecture Block Diagram</h3>
+                    <div class="block-diagram">
+                        <div class="block">Solar PV Panels (5 kW)<br><small>Monocrystalline/Polycrystalline</small></div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Charge Controller (MPPT)<br><small>Maximum Power Point Tracking</small></div>
+                        <div class="arrow">↓</div>
+                        
+                        <div class="flow-container">
+                            <div class="flow-block">Battery Storage<br><small>Lithium-ion/Lead-acid</small></div>
+                            <span class="horizontal-arrow">→</span>
+                            <div class="flow-block">Inverter<br><small>DC to AC Conversion</small></div>
+                            <span class="horizontal-arrow">←</span>
+                            <div class="flow-block">Grid Connection<br><small>Net Metering</small></div>
+                        </div>
+                        
+                        <div class="arrow">↓</div>
+                        <div class="block">Distribution Panel</div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Household AC Loads<br><small>Appliances & Lighting</small></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <h3>System Explanation</h3>
+                    <p><strong>Energy Source:</strong> The primary energy source is solar radiation captured by photovoltaic panels installed on the rooftop. A 5 kW system typically requires 15-20 solar panels, each rated at 300-350W, occupying approximately 300-400 square feet of roof space. The panels convert sunlight directly into DC electricity through the photovoltaic effect.</p>
+                    
+                    <p><strong>Conversion Process:</strong> The generated DC power flows through an MPPT charge controller that optimizes energy harvest by adjusting the electrical operating point. This controller simultaneously manages battery charging and direct power supply. The stored DC energy from batteries or direct panel output is converted to 230V AC through a grid-tied inverter, which synchronizes with utility power for seamless operation.</p>
+                    
+                    <p><strong>Output & Utilization:</strong> The system delivers approximately 20-25 kWh daily energy, sufficient for a typical residential household. Excess energy is exported to the grid through net metering, reducing electricity bills by 60-80%. During nighttime or cloudy periods, the battery bank provides backup power, ensuring 24/7 availability. The bidirectional grid connection allows energy flow management while maintaining grid stability.</p>
+                    
+                    <p><strong>Real-world Application:</strong> This design addresses India's growing residential energy demand while reducing carbon footprint. With declining solar costs and government incentives like subsidies and accelerated depreciation, rooftop solar has become economically viable. The system provides energy independence, reduces transmission losses, and contributes to distributed generation goals. The 25-year panel lifespan ensures long-term savings and sustainability, making it ideal for urban and suburban homes.</p>
+                </div>
+                
+                <div class="specs">
+                    <h4>System Specifications</h4>
+                    <ul>
+                        <li>Solar Panel Capacity: 5 kW (15-20 panels of 300-350W each)</li>
+                        <li>Battery Storage: 10-15 kWh (Lithium-ion preferred)</li>
+                        <li>Inverter: 5 kW Grid-tied with MPPT</li>
+                        <li>Expected Daily Generation: 20-25 kWh</li>
+                        <li>Payback Period: 5-7 years</li>
+                        <li>System Lifespan: 25+ years</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Activity 2: Solar Water Heating System -->
+            <section id="activity2" class="activity-section">
+                <h2>Activity 2: Solar Water Heating System (2000 L/day)</h2>
+                
+                <div class="diagram-container">
+                    <h3>System Architecture Block Diagram</h3>
+                    <div class="block-diagram">
+                        <div class="block">Solar Thermal Collectors<br><small>Evacuated Tube/Flat Plate</small></div>
+                        <div class="arrow">↓ (Heat Transfer)</div>
+                        <div class="block">Heat Transfer Fluid<br><small>Water/Glycol Mix</small></div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Heat Exchanger<br><small>Coil inside Storage Tank</small></div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Insulated Storage Tank<br><small>2000 Liter Capacity</small></div>
+                        
+                        <div class="flow-container">
+                            <div class="flow-block">Temperature Sensors</div>
+                            <span class="horizontal-arrow">→</span>
+                            <div class="flow-block">Control System</div>
+                            <span class="horizontal-arrow">→</span>
+                            <div class="flow-block">Circulation Pump</div>
+                        </div>
+                        
+                        <div class="arrow">↓</div>
+                        <div class="block">Auxiliary Heater (Backup)<br><small>Electric/Gas Heater</small></div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Hot Water Distribution<br><small>To Hostel Bathrooms</small></div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <h3>System Explanation</h3>
+                    <p><strong>Energy Source:</strong> Solar thermal energy is captured through evacuated tube collectors or flat plate collectors installed on the hostel rooftop. For 2000 liters daily hot water requirement at 60°C, approximately 40-50 square meters of collector area is needed. These collectors absorb solar radiation and convert it into thermal energy with efficiency rates of 60-70%, significantly higher than photovoltaic conversion.</p>
+                    
+                    <p><strong>Conversion Process:</strong> The collectors heat a working fluid (water or propylene glycol mixture) that circulates through a closed-loop system. A differential temperature controller activates the circulation pump when collector temperature exceeds storage tank temperature by 5-8°C. The heated fluid passes through a heat exchanger immersed in the storage tank, transferring thermal energy to potable water without direct contact, ensuring hygienic operation.</p>
+                    
+                    <p><strong>Output & Utilization:</strong> The system maintains 2000 liters of hot water at 55-60°C throughout the day, meeting peak demand during morning and evening hours. The heavily insulated storage tank minimizes heat loss to less than 2-3°C overnight. An auxiliary electric or gas heater provides backup heating during consecutive cloudy days or when solar gain is insufficient, ensuring uninterrupted hot water supply for hostel residents.</p>
+                    
+                    <p><strong>Real-world Application:</strong> This system is ideal for university hostels where daily hot water demand is predictable and substantial. It reduces electricity consumption by 70-80%, resulting in significant operational cost savings and reduced strain on electrical infrastructure. With government subsidies for institutional solar water heaters, the payback period is typically 3-4 years. The system requires minimal maintenance, operates silently, and eliminates combustion emissions, making it environmentally sustainable and economically viable for educational institutions nationwide.</p>
+                </div>
+                
+                <div class="specs">
+                    <h4>System Specifications</h4>
+                    <ul>
+                        <li>Daily Hot Water Requirement: 2000 liters at 60°C</li>
+                        <li>Collector Area: 40-50 m² (Evacuated Tube Collectors)</li>
+                        <li>Storage Tank: 2000 L with polyurethane insulation</li>
+                        <li>Heat Exchanger: Copper coil, 4-6 m²</li>
+                        <li>Circulation Pump: 0.5 HP with differential controller</li>
+                        <li>Energy Savings: 70-80% reduction in electricity costs</li>
+                        <li>Payback Period: 3-4 years</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Activity 3: Hybrid Solar-Wind System -->
+            <section id="activity3" class="activity-section">
+                <h2>Activity 3: Hybrid Solar-Wind System for Rural Health Clinic</h2>
+                
+                <div class="diagram-container">
+                    <h3>System Architecture Block Diagram</h3>
+                    <div class="block-diagram">
+                        <div class="flow-container">
+                            <div class="flow-block">Solar PV Array<br><small>3 kW Panels</small></div>
+                            <span class="horizontal-arrow">+</span>
+                            <div class="flow-block">Wind Turbine<br><small>2 kW Generator</small></div>
+                        </div>
+                        
+                        <div class="arrow">↓</div>
+                        <div class="block">Hybrid Charge Controller<br><small>MPPT + Wind Rectifier</small></div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Battery Bank<br><small>15-20 kWh Storage</small></div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Inverter System<br><small>5 kW Pure Sine Wave</small></div>
+                        <div class="arrow">↓</div>
+                        <div class="block">Load Distribution Panel</div>
+                        <div class="arrow">↓</div>
+                        
+                        <div class="flow-container">
+                            <div class="flow-block">Critical Loads<br><small>Medical Equipment</small></div>
+                            <div class="flow-block">Non-Critical Loads<br><small>Lighting & HVAC</small></div>
+                            <div class="flow-block">Monitoring System<br><small>SCADA/IoT</small></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="explanation">
+                    <h3>System Explanation</h3>
+                    <p><strong>Energy Source:</strong> This hybrid system combines 3 kW solar photovoltaic panels with a 2 kW wind turbine to ensure reliable power supply throughout day and night. Solar panels generate maximum power during 6-8 peak sun hours daily, while the wind turbine contributes during evening and night when wind speeds typically increase. This complementary nature addresses the intermittency challenge of single-source renewable systems, ensuring continuous power availability for critical healthcare services.</p>
+                    
+                    <p><strong>Conversion Process:</strong> Solar panels produce DC electricity through photovoltaic conversion, while the wind turbine generates variable AC power that is rectified to DC. Both sources feed into a sophisticated hybrid charge controller that manages power from both inputs, prioritizing direct load supply and directing excess energy to battery charging. The controller employs MPPT technology for solar optimization and dump load regulation for wind excess. The stored DC power is inverted to stable 230V AC through a pure sine wave inverter suitable for sensitive medical equipment.</p>
+                    
+                    <p><strong>Output & Utilization:</strong> The system provides approximately 25-30 kWh daily energy, sufficient for running medical equipment (refrigerators for vaccines, diagnostic devices), lighting, computers, and air conditioning. The 15-20 kWh battery bank ensures 36-48 hours of autonomy, critical during extended periods of low solar radiation or calm winds. Priority load management ensures life-critical equipment receives uninterrupted power while non-essential loads can be curtailed during energy deficit periods.</p>
+                    
+                    <p><strong>Real-world Application:</strong> This design is perfect for remote rural health clinics beyond grid reach or experiencing frequent power outages. Reliable electricity enables vaccine refrigeration, emergency medical procedures, telemedicine consultations, and nighttime operations. The hybrid approach increases system reliability to over 95%, compared to 70-80% for single-source systems. With declining component costs and government healthcare electrification programs, such systems are becoming economically feasible. The 20-year lifespan and minimal maintenance requirements make it ideal for resource-constrained rural healthcare infrastructure, directly contributing to improved health outcomes and achieving sustainable development goals.</p>
+                </div>
+                
+                <div class="specs">
+                    <h4>System Specifications</h4>
+                    <ul>
+                        <li>Solar PV Capacity: 3 kW (9-10 panels of 330W each)</li>
+                        <li>Wind Turbine: 2 kW with 5m tower height</li>
+                        <li>Battery Storage: 15-20 kWh (Lithium-ion/Tubular Lead-acid)</li>
+                        <li>Inverter: 5 kW Pure Sine Wave with UPS function</li>
+                        <li>Expected Daily Generation: 25-30 kWh</li>
+                        <li>System Reliability: >95% uptime</li>
+                        <li>Battery Autonomy: 36-48 hours</li>
+                        <li>System Lifespan: 20-25 years</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
